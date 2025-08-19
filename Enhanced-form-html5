@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multi-Section Demo Page</title>
+</head>
+<body>
+
+  <header>
+    <h1>Multi-Section Demo Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a complete HTML5 form with built-in validation.</p>
+  </header>
+
+  <!-- ===== LISTS ===== -->
+  <section>
+    <h2>Course Modules</h2>
+    <p>Below is an ordered and unordered list of topics covered:</p>
+
+    <h3>Ordered List (Step by Step)</h3>
+    <ol>
+      <li>Introduction to Web Development</li>
+      <li>HTML5 Basics</li>
+      <li>CSS Styling</li>
+      <li>Forms and Validation</li>
+      <li>Embedding Media</li>
+    </ol>
+
+    <h3>Unordered List (Skills)</h3>
+    <ul>
+      <li>Problem Solving</li>
+      <li>Accessibility Awareness</li>
+      <li>Code Organization</li>
+      <li>Critical Thinking</li>
+    </ul>
+  </section>
+
+  <!-- ===== TABLE ===== -->
+  <section>
+    <h2>Course Schedule</h2>
+    <table border="1" cellpadding="8">
+      <thead>
+        <tr>
+          <th>Module</th>
+          <th>Duration</th>
+          <th>Format</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5 & Accessibility</td>
+          <td>2 Weeks</td>
+          <td>Online</td>
+        </tr>
+        <tr>
+          <td>CSS3 & Layouts</td>
+          <td>3 Weeks</td>
+          <td>Hybrid</td>
+        </tr>
+        <tr>
+          <td>Forms & Media</td>
+          <td>2 Weeks</td>
+          <td>Online</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- ===== MEDIA ===== -->
+  <section>
+    <h2>Media Samples</h2>
+    <p>Here are examples of embedding images, audio, and video.</p>
+
+    <figure>
+      <img src="https://via.placeholder.com/250x150" alt="Sample placeholder image">
+      <figcaption>Figure 1: Example image</figcaption>
+    </figure>
+
+    <p>Audio Sample:</p>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Video Sample:</p>
+    <video controls width="300">
+      <source src="sample.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- ===== FORM ===== -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Min 6 characters" required minlength="6">
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+
+        <label for="course">Select a Course:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Choose a course --</option>
+          <option value="html">HTML5 Basics</option>
+          <option value="css">CSS Styling</option>
+          <option value="forms">Forms & Validation</option>
+        </select>
+
+        <p>Preferred Learning Mode:</p>
+        <input type="radio" id="online" name="mode" value="online" required>
+        <label for="online">Online</label>
+        <input type="radio" id="offline" name="mode" value="offline">
+        <label for="offline">Offline</label>
+
+        <p>Areas of Interest:</p>
+        <input type="checkbox" id="web" name="interest" value="web">
+        <label for="web">Web Development</label>
+        <input type="checkbox" id="design" name="interest" value="design">
+        <label for="design">UI/UX Design</label>
+        <input type="checkbox" id="data" name="interest" value="data">
+        <label for="data">Data Science</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Other Details</legend>
+
+        <label for="about">Tell Us About Yourself:</label>
+        <textarea id="about" name="about" rows="4" placeholder="Brief introduction"></textarea>
+
+        <label for="resume">Upload Resume (PDF only):</label>
+        <input type="file" id="resume" name="resume" accept=".pdf">
+
+        <label for="readonly-id">User ID (auto-generated):</label>
+        <input type="text" id="readonly-id" value="USER12345" readonly>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Multi-Section Demo Page. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
